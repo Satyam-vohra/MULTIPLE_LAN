@@ -1,4 +1,3 @@
-
 current_language = 'C'  # Default language
 
 def get_tkinter_index(text_widget, char_index):
