@@ -7,11 +7,9 @@ def get_tkinter_index(text_widget, char_index):
 def highlight_code(text_widget, code):
     language = LANGUAGES[current_language]
     patterns = language['patterns']
-    
     # Remove all tags first
     for token in TOKEN_TYPES.keys():
         text_widget.tag_remove(token, "1.0", END)
-    
     # Apply highlighting for each token type
     for token_type, pattern in patterns.items():
         if token_type not in TOKEN_TYPES:
